@@ -6,6 +6,21 @@ import Divider from "../divider";
 export default function Hero() {
   return (
     <header className="h-[760px] max-h-[616px] bg-base-purple relative">
+      <div className="absolute right-0 top-[-70px]">
+        <StaticImage
+          src="../../images/hai-logo-bg-1.png"
+          alt=""
+          placeholder="blurred"
+        ></StaticImage>
+      </div>
+      <div className="absolute left-0 top-[400px]">
+        <StaticImage
+          src="../../images/hai-logo-bg-2.png"
+          alt=""
+          placeholder="blurred"
+        ></StaticImage>
+      </div>
+      <div className="a"></div>
       <div className="container mx-auto px-28 pt-5 pb-20">
         <h1 className="text-white font-bold text-[64px] w-[624px] leading-[65px] mb-10">
           Global Leaders in <br /> AI Risk Management
