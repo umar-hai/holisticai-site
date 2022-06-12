@@ -1,28 +1,36 @@
+import { Link, useStaticQuery, graphql } from "gatsby";
 import React from "react";
-import Header from "./header";
+import Seo from "./seo";
 
-import "../styles/layout.css";
-import * as styles from "./layout.module.css";
+export default function Layout({
+  children,
+  title = false,
+  description = false,
+  image = false,
+  path = false,
+}) {
+  const data = useStaticQuery(graphql`
+    query GetSiteTitle {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
 
-const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
-  <>
-    <Header
-      siteTitle={siteTitle}
-      onHideNav={onHideNav}
-      onShowNav={onShowNav}
-      showNav={showNav}
-    />
-    <div className={styles.content}>{children}</div>
-    <footer className={styles.footer}>
-      <div className={styles.footerWrapper}>
-        <div className={styles.siteInfo}>
-          &copy; {new Date().getFullYear()}, Built with{" "}
-          <a href="https://www.sanity.io">Sanity</a> &amp;{" "}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </div>
-      </div>
-    </footer>
-  </>
-);
+  const meta = data?.site?.siteMetadata ?? {};
 
-export default Layout;
+  return (
+    <>
+      <Seo title={title} description={description} image={image} path={path} />
+      <header>
+        <Link to="/">{meta.title}</Link>
+        <nav>
+          <Link to="/blog">Blog</Link>
+        </nav>
+      </header>
+      <main>{children}</main>
+    </>
+  );
+}
