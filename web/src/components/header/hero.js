@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
+import Title from "../../title";
 import CheckItem from "../check-item";
 import Divider from "../divider";
 
@@ -22,9 +23,9 @@ export default function Hero() {
       </div>
       <div className="a"></div>
       <div className="container mx-auto px-28 pt-5 pb-20">
-        <h1 className="text-white font-bold text-[64px] w-[624px] leading-[65px] mb-10">
-          Global Leaders in <br /> AI Risk Management
-        </h1>
+        <Title textColor="text-white">
+          <div>Global Leaders in AI Risk Management</div>
+        </Title>
         <Divider />
         <div className="w-[509px] mt-10 text-white font-roboto">
           <p>
