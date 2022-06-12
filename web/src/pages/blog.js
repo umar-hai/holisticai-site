@@ -8,7 +8,6 @@ import {
 import BlogPostPreviewList from "../components/blog-post-preview-list";
 import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
-import SEO from "../components/seo";
 import Layout from "../components/layout";
 
 export const query = graphql`
@@ -77,8 +76,7 @@ const IndexPage = (props) => {
     : [];
 
   return (
-    <Layout>
-      <SEO />
+    <Layout title="Holistic AI - Blog">
       <Container>
         {postNodes && (
           <BlogPostPreviewList

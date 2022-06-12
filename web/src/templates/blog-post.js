@@ -4,7 +4,6 @@ import React from "react";
 import GraphQLErrorList from "../components/graphql-error-list";
 import Layout from "../components/layout";
 import Container from "../components/container";
-import SEO from "../components/seo";
 import { toPlainText } from "../lib/helpers";
 
 export const query = graphql`
@@ -61,16 +60,10 @@ const BlogPostTemplate = (props) => {
   const { data, errors } = props;
   const post = data && data.post;
   return (
-    <Layout>
-      {errors && <SEO title="GraphQL Error" />}
-      {post && (
-        <SEO
-          title={post.title || "Untitled"}
-          description={toPlainText(post._rawExcerpt)}
-          image={post.mainImage}
-        />
-      )}
-
+    <Layout
+      title={`Holistic AI - ${post.title || "Untitled"}`}
+      description={toPlainText(post._rawExcerpt)}
+    >
       {errors && (
         <Container>
           <GraphQLErrorList errors={errors} />
