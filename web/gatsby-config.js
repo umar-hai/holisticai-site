@@ -8,6 +8,12 @@ const clientConfig = require("./client-config");
 const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: "https://www.holisticai.com",
+    title: "Holistic AI - Solving Trust in AI",
+    description: "Algorithms to Safeguard Society",
+    image: "https://holistic-ai.mo.cloudinary.net/hai-logo.png",
+  },
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
