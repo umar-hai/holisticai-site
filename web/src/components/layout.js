@@ -1,5 +1,7 @@
 import { Link, useStaticQuery, graphql } from "gatsby";
 import React from "react";
+import Hero from "./header/hero";
+import Navbar from "./header/navbar";
 import Seo from "./seo";
 
 export default function Layout({
@@ -9,27 +11,12 @@ export default function Layout({
   image = false,
   path = false,
 }) {
-  const data = useStaticQuery(graphql`
-    query GetSiteTitle {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
-  const meta = data?.site?.siteMetadata ?? {};
-
   return (
     <>
+      <Navbar></Navbar>
       <Seo title={title} description={description} image={image} path={path} />
-      <header>
-        <Link to="/">{meta.title}</Link>
-        <nav>
-          <Link to="/blog">Blog</Link>
-        </nav>
-      </header>
+      <Hero></Hero>
+
       <main>{children}</main>
     </>
   );
