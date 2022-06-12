@@ -1,4 +1,5 @@
 import * as React from "react";
+import CheckItem from "../check-item";
 import Divider from "../divider";
 
 export default function Hero() {
@@ -21,6 +22,11 @@ export default function Hero() {
             No matter at which maturity stage, location or scale, Holistic AI
             has a solution for you.
           </p>
+        </div>
+        <div className="mt-8 flex flex-col space-y-4">
+          <CheckItem text="Enterprise-ready SaaS Solution"></CheckItem>
+          <CheckItem text="World-first AI Auditors"></CheckItem>
+          <CheckItem text="Shaping AI policy worldwide"></CheckItem>
         </div>
       </div>
     </header>
