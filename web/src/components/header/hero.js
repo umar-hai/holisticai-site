@@ -1,10 +1,11 @@
+import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import CheckItem from "../check-item";
 import Divider from "../divider";
 
 export default function Hero() {
   return (
-    <header className="h-[760px] max-h-[616px] bg-base-purple">
+    <header className="h-[760px] max-h-[616px] bg-base-purple relative">
       <div className="container mx-auto px-28 pt-5 pb-20">
         <h1 className="text-white font-bold text-[64px] w-[624px] leading-[65px] mb-10">
           Global Leaders in <br /> AI Risk Management
@@ -19,8 +20,8 @@ export default function Hero() {
             models, and processes, at any level of maturity or scale.
           </p>
           <p className="mt-10">
-            No matter at which maturity stage, location or scale, Holistic AI
-            has a solution for you.
+            No matter at which maturity stage, location or scale, <br />
+            Holistic AI has a solution for you.
           </p>
         </div>
         <div className="mt-8 flex flex-col space-y-4">
@@ -28,6 +29,15 @@ export default function Hero() {
           <CheckItem text="World-first AI Auditors"></CheckItem>
           <CheckItem text="Shaping AI policy worldwide"></CheckItem>
         </div>
+      </div>
+      <div className="flex absolute top-[-70px] right-0">
+        <StaticImage
+          quality={100}
+          style={{ margin: "auto" }}
+          src="../../images/hero-screen.png"
+          alt=""
+          placeholder="blurred"
+        ></StaticImage>
       </div>
     </header>
   );
