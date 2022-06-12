@@ -15,6 +15,9 @@ module.exports = {
         "inactive-blue": "#a8b9f0",
       },
     },
+    fontFamily: {
+      roboto: ["Roboto"],
+    },
   },
   plugins: [],
 };

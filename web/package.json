@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@fontsource/nunito": "^4.5.9",
+    "@fontsource/roboto": "^4.5.7",
     "@portabletext/react": "^1.0.1",
     "@sanity/image-url": "^1.0.1",
     "autoprefixer": "^10.4.7",
