@@ -13,6 +13,8 @@ module.exports = {
         "inactive-base-purple": "#aa9df1",
         "base-blue": "#264fd9",
         "inactive-blue": "#a8b9f0",
+        "text-body": "#1b1e27",
+        light: "#f4f5f8",
       },
     },
     fontFamily: {
