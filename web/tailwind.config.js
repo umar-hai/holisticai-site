@@ -16,6 +16,9 @@ module.exports = {
         "text-body": "#1b1e27",
         light: "#f4f5f8",
       },
+      boxShadow: {
+        hai: "0px 4px 16px rgba(0, 0, 0, 0.15)",
+      },
     },
     fontFamily: {
       roboto: ["Roboto"],
