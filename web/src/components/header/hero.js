@@ -26,7 +26,6 @@ export default function Hero() {
         <Title classNames="text-white w-[624px]">
           <div>Global Leaders in AI Risk Management</div>
         </Title>
-        <Divider />
         <div className="w-[509px] mt-10 text-white font-roboto">
           <p>
             <span className="text-inactive-base-purple">Holistic AI</span>{" "}
