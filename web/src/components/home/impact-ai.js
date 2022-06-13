@@ -17,7 +17,7 @@ export default function ImpactAi() {
           Holistic AI is commited to create a Responsible AI ecosystem by
           working with regulators, policy-makers and engineers internationally
         </div>
-        <div className="mt-10 flex space-x-3">
+        <div className="mt-10 flex space-x-3 justify-center">
           <Metric
             value="10k+"
             text="Systems covered in more 
