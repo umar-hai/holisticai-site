@@ -1,9 +1,9 @@
 import * as React from "react";
 
-export default function Title({ children, textColor }) {
+export default function Title({ children, classNames }) {
   return (
     <h1
-      className={`${textColor} font-bold text-[64px] w-[624px] leading-[65px] mb-10`}
+      className={`${classNames} font-bold text-[64px] leading-[65px] mb-10 w-100`}
     >
       <div>{children}</div>
     </h1>

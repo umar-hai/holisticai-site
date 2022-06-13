@@ -23,7 +23,7 @@ export default function Hero() {
       </div>
       <div className="a"></div>
       <div className="container mx-auto px-28 pt-5 pb-20">
-        <Title textColor="text-white">
+        <Title classNames="text-white w-[624px]">
           <div>Global Leaders in AI Risk Management</div>
         </Title>
         <Divider />
