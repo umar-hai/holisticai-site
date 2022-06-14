@@ -15,9 +15,9 @@ export default function Layout({
     <>
       <Navbar></Navbar>
       <Seo title={title} description={description} image={image} path={path} />
-      <Hero></Hero>
+      {children.hero}
 
-      <main>{children}</main>
+      <main>{children.main}</main>
     </>
   );
 }
