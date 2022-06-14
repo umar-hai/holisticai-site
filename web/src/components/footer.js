@@ -20,13 +20,13 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="font-bold text-[22px] text-white">Explore</h3>
-            <ul>
-              <li className="text-text-secondary mt-8">
+            <ul className="text-text-secondary">
+              <li className="mt-8">
                 <Link to="/">Home</Link>
               </li>
-              {/* <li className="text-white font-extrabold mt-8">
-                <Link to="careers">Careers</Link>
-              </li> */}
+              <li className="mt-8">
+                <Link to="contact">Request Demo</Link>
+              </li>
             </ul>
           </div>
           {/* <div>
