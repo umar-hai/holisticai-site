@@ -2,7 +2,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Title from "../../title";
 import CheckItem from "../check-item";
-import Divider from "../divider";
 
 export default function Hero() {
   return (

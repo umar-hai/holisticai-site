@@ -17,7 +17,7 @@ export default function Navbar() {
           <li>Company</li>
           <li>
             <div className="w-[204px] flex items-center">
-              <ButtonLink link="/blog" text="Request a demo"></ButtonLink>
+              <ButtonLink link="/contact" text="Request a demo"></ButtonLink>
             </div>
           </li>
         </ul>
