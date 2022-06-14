@@ -30,30 +30,24 @@ export default function HaiPlatform() {
               to manage your AI assets
             </div>
             <div className="mt-12 grid grid-cols-2 gap-8">
-              <HaiPlatformBullet
-                textClass="text-white"
-                text="Map your systems with a comprehensive AI Inventory"
-              ></HaiPlatformBullet>
-              <HaiPlatformBullet
-                textClass="text-white"
-                text="Standardize risk-management methods across the enterprise"
-              ></HaiPlatformBullet>
-              <HaiPlatformBullet
-                textClass="text-white"
-                text="Prepare safe, legal and ethical deployment of AI"
-              ></HaiPlatformBullet>
-              <HaiPlatformBullet
-                textClass="text-white"
-                text="Future-proof your system Regulatory-ready"
-              ></HaiPlatformBullet>
-              <HaiPlatformBullet
-                textClass="text-white"
-                text="Protect your data assets and govern their usage"
-              ></HaiPlatformBullet>
-              <HaiPlatformBullet
-                textClass="text-white"
-                text="Improve procurement and onboarding of AI suppliers"
-              ></HaiPlatformBullet>
+              <HaiPlatformBullet textClass="text-white">
+                Map your systems with a comprehensive AI Inventory
+              </HaiPlatformBullet>
+              <HaiPlatformBullet textClass="text-white">
+                Standardize risk-management methods across the enterprise
+              </HaiPlatformBullet>
+              <HaiPlatformBullet textClass="text-white">
+                Prepare safe, legal and ethical deployment of AI
+              </HaiPlatformBullet>
+              <HaiPlatformBullet textClass="text-white">
+                Future-proof your system Regulatory-ready
+              </HaiPlatformBullet>
+              <HaiPlatformBullet textClass="text-white">
+                Protect your data assets and govern their usage
+              </HaiPlatformBullet>
+              <HaiPlatformBullet textClass="text-white">
+                Improve procurement and onboarding of AI suppliers
+              </HaiPlatformBullet>
             </div>
           </div>
           <div className="flex-1 justify-end">

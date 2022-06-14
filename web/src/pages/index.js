@@ -1,4 +1,5 @@
 import React from "react";
+import AiAuditing from "../components/home/ai-auditing";
 import AiRiskManagement from "../components/home/ai-risk-management";
 import FeaturedIn from "../components/home/featured-in";
 import HaiPlatform from "../components/home/hai-platform";
@@ -14,6 +15,7 @@ export default function IndexPage() {
       <FeaturedIn></FeaturedIn>
       <HaiPlatform></HaiPlatform>
       <AiRiskManagement></AiRiskManagement>
+      <AiAuditing></AiAuditing>
     </Layout>
   );
 }

@@ -27,22 +27,18 @@ export default function AiRiskManagement() {
           </div>
           <div>
             <div className="grid grid-cols-2 gap-8">
-              <HaiPlatformBullet
-                text="Protect from reputational and financial damage"
-                textClass="text-text-body"
-              ></HaiPlatformBullet>
-              <HaiPlatformBullet
-                text="Assess your systems efficacy and robustness levels"
-                textClass="text-text-body"
-              ></HaiPlatformBullet>
-              <HaiPlatformBullet
-                text="Get compliant by-design to ever-coming regulations and standards"
-                textClass="text-text-body"
-              ></HaiPlatformBullet>
-              <HaiPlatformBullet
-                text="Improve systems Transparency, and Mitigate eventual Bias risks"
-                textClass="text-text-body"
-              ></HaiPlatformBullet>
+              <HaiPlatformBullet textClass="text-text-body">
+                Protect from reputational and financial damage
+              </HaiPlatformBullet>
+              <HaiPlatformBullet textClass="text-text-body">
+                Assess your systems efficacy and robustness levels
+              </HaiPlatformBullet>
+              <HaiPlatformBullet textClass="text-text-body">
+                Get compliant by-design to ever-coming regulations and standards
+              </HaiPlatformBullet>
+              <HaiPlatformBullet textClass="text-text-body">
+                Improve systems Transparency, and Mitigate eventual Bias risks
+              </HaiPlatformBullet>
             </div>
           </div>
         </div>
