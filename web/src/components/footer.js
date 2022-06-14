@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-dark ">
       <div className="container mx-auto px-28 py-16">
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-1 lg:grid-cols-3">
           <div className="flex ">
             <div>
               <Link to="/">
@@ -19,7 +19,9 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h3 className="font-bold text-[22px] text-white">Explore</h3>
+            <h3 className="font-bold text-[22px] text-white mt-10 lg:mt-2">
+              Explore
+            </h3>
             <ul className="text-text-secondary">
               <li className="mt-8">
                 <Link to="/">Home</Link>
@@ -37,7 +39,9 @@ export default function Footer() {
             </ul>
           </div> */}
           <div>
-            <h3 className="font-bold text-[22px] text-white">Contact</h3>
+            <h3 className="font-bold text-[22px] text-white mt-10 lg:mt-2">
+              Contact
+            </h3>
             <ul>
               <li className="text-text-secondary  mt-8">
                 18 Soho Square, London, W1D 3QH, United Kingdom
