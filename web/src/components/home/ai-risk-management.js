@@ -15,18 +15,34 @@ export default function AiRiskManagement() {
           Enterprise-grade management of your AI assets risks, ensuring adoption
           is done in a safe, legal, and ethical manner
         </div>
-        <div className="flex space-x-8">
+        <div className="block lg:hidden">
+          <StaticImage
+            quality={100}
+            src="../../images/ai-risk-management.png"
+            alt=""
+            width={380}
+          ></StaticImage>
+        </div>
+        <div className="block lg:flex lg:space-x-8">
           <div className="flex-1">
-            <div>
+            <div className="hidden xl:block">
               <StaticImage
                 src="../../images/ai-risk-management.png"
                 alt=""
                 quality={100}
               ></StaticImage>
             </div>
+            <div className="hidden lg:block xl:hidden">
+              <StaticImage
+                src="../../images/ai-risk-management.png"
+                alt=""
+                quality={100}
+                width={394}
+              ></StaticImage>
+            </div>
           </div>
-          <div>
-            <div className="grid grid-cols-2 gap-8">
+          <div className="flex justify-center lg:block">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <HaiPlatformBullet textClass="text-text-body">
                 Protect from reputational and financial damage
               </HaiPlatformBullet>
