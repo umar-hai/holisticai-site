@@ -15,7 +15,7 @@ export default function UseCasesOverview() {
         </Title>
         <div className="flex mt-10 space-x-10">
           <div className="flex-1">
-            <div className="text-inactive-base-purple text-[22px]">
+            <div className="text-inactive-blue text-[22px]">
               Delivering value for leading enterprises in different sectors.
               Ensuring that any AI deployment is done in a Safe, Legal, and
               Ethical manner
