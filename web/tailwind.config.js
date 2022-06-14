@@ -14,6 +14,7 @@ module.exports = {
         "base-blue": "#264fd9",
         "inactive-blue": "#a8b9f0",
         "text-body": "#1b1e27",
+        "text-secondary": "#8492a6",
         light: "#f4f5f8",
         dark: "#141e41",
       },

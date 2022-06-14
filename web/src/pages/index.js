@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/footer";
 import AiAuditing from "../components/home/ai-auditing";
 import AiRiskManagement from "../components/home/ai-risk-management";
 import FeaturedIn from "../components/home/featured-in";
@@ -20,6 +21,7 @@ export default function IndexPage() {
       <AiAuditing></AiAuditing>
       <SolvingTrust></SolvingTrust>
       <OurPartners></OurPartners>
+      <Footer></Footer>
     </Layout>
   );
 }
