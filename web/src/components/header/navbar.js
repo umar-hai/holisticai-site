@@ -11,10 +11,10 @@ export default function Navbar() {
           <StaticImage src="../../images/logo-navbar.png" alt=""></StaticImage>
         </Link>
         <ul className="text-white flex space-x-12 font-semibold text-[19px] items-center">
-          <li>Home</li>
+          {/* <li>Home</li>
           <li>Use cases</li>
           <li>Resources</li>
-          <li>Company</li>
+          <li>Company</li> */}
           <li>
             <div className="w-[204px] flex items-center">
               <ButtonLink link="/contact" text="Request a demo"></ButtonLink>
