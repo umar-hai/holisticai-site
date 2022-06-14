@@ -40,7 +40,7 @@ export default function HaiPlatform() {
                 Prepare safe, legal and ethical deployment of AI
               </HaiPlatformBullet>
               <HaiPlatformBullet textClass="text-white">
-                Future-proof your system Regulatory-ready
+                Future-proof your system to be Regulatory-ready
               </HaiPlatformBullet>
               <HaiPlatformBullet textClass="text-white">
                 Protect your data assets and govern their usage

@@ -29,9 +29,9 @@ export default function Hero() {
           <p>
             <span className="text-inactive-base-purple">Holistic AI</span>{" "}
             ensures that enterprises can adopt AI with confidence and assurance.
-            AI does not need to be a high-risk liability: Holistic AI’s
-            guarantee AI that is safe, ethical, and legal. We assess data,
-            models, and processes, at any level of maturity or scale.
+            AI does not need to be a high-risk liability; Holistic AI guarantees
+            AI that is safe, ethical, and legal. We assess data, models, and
+            processes, at any level of maturity or scale.
           </p>
           <p className="mt-10">
             No matter at which maturity stage, location or scale, <br />

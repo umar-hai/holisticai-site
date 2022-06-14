@@ -10,7 +10,7 @@ export default function UseCasesOverview() {
     <section className="bg-dark">
       <HaiContainer>
         <Title classNames="text-white" dividerColor="border-base-purple">
-          Better AI, Better for Everyone
+          Better AI for Everyone
         </Title>
         <div className="flex mt-10 space-x-10">
           <div className="flex-1">
@@ -71,10 +71,9 @@ export default function UseCasesOverview() {
             </UseCaseCard>
             <UseCaseCard title="Third-party conformity assessment">
               <div>
-                Our auditing process allows your enterprise to adopt AI with
-                confidence, minimize risk, optimise resource allocation and
-                outcomes across the enterprise, and prepare for the wide-ranging
-                implications of the EU AI Act
+                Our assurance process demonstrates efficiency, adhrence to
+                standards or your legal compliance to regulators and customers.
+                Use Holistic AI to generate trust at scale for your enterprise.​
               </div>
             </UseCaseCard>
           </div>
