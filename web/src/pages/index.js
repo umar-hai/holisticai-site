@@ -1,4 +1,5 @@
 import React from "react";
+import AiRiskManagement from "../components/home/ai-risk-management";
 import FeaturedIn from "../components/home/featured-in";
 import HaiPlatform from "../components/home/hai-platform";
 import ImpactAi from "../components/home/impact-ai";
@@ -12,6 +13,7 @@ export default function IndexPage() {
       <UseCasesOverview></UseCasesOverview>
       <FeaturedIn></FeaturedIn>
       <HaiPlatform></HaiPlatform>
+      <AiRiskManagement></AiRiskManagement>
     </Layout>
   );
 }
