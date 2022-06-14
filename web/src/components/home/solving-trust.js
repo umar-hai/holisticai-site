@@ -26,21 +26,33 @@ export default function SolvingTrust() {
             title="Embedding Ethics in AI"
             text="By pursuing Foundational Research, we aim to embed in systems attitudes and practices that by-design make these systems compliant to certain standards, regulations or expectations"
           >
-            <StaticImage src="../../images/embed-ethics.png"></StaticImage>
+            <StaticImage
+              alt=""
+              quality={100}
+              src="../../images/embed-ethics.png"
+            ></StaticImage>
           </MissionIconText>
           <div className="h-[363px] flex items-end">
             <MissionIconText
               title="Demonstrable Trust"
               text="By pursuing Applied Research, our goal is to create new metrics, methods, and processes that can improve system verification and mitigation "
             >
-              <StaticImage src="../../images/embed-ethics.png"></StaticImage>
+              <StaticImage
+                alt=""
+                quality={100}
+                src="../../images/trust.png"
+              ></StaticImage>
             </MissionIconText>
           </div>
           <MissionIconText
             title="Scaling Trusted Practices "
             text="By pursuing Engineering Excellence, we aim to make all our methods, research and practices affordable and easy-to-use. This is part of our commitment to build a global ecosystem of trust "
           >
-            <StaticImage src="../../images/embed-ethics.png"></StaticImage>
+            <StaticImage
+              alt=""
+              quality={100}
+              src="../../images/scaling.png"
+            ></StaticImage>
           </MissionIconText>
         </div>
       </HaiContainer>
