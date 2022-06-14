@@ -12,44 +12,46 @@ export default function UseCasesOverview() {
         <Title classNames="text-white" dividerColor="border-base-purple">
           Better AI for Everyone
         </Title>
-        <div className="flex mt-10 space-x-10">
+        <div className="flex flex-col xl:flex-row mt-10 xl:space-x-10">
           <div className="flex-1">
             <div className="text-inactive-blue text-[22px]">
               Delivering value for leading enterprises in different sectors.
               Ensuring that any AI deployment is done in a Safe, Legal, and
               Ethical manner
             </div>
-            <div className="mt-8">
+            <div className="my-8 xl:my-0 xl:mt-8 flex flex-col items-center xl:block">
               <div className="text-[22px] text-white">Some of our Clients</div>
-              <div className="grid grid-cols-2 gap-y-4 mt-2">
-                <UseCaseClient>
-                  <StaticImage
-                    src="../../images/starling.png"
-                    alt="starling logo"
-                  ></StaticImage>
-                </UseCaseClient>
-                <UseCaseClient>
-                  <StaticImage
-                    src="../../images/mindbridge.png"
-                    alt="mindbridge logo"
-                  ></StaticImage>
-                </UseCaseClient>
-                <UseCaseClient>
-                  <StaticImage
-                    src="../../images/hired.png"
-                    alt="hired logo"
-                  ></StaticImage>
-                </UseCaseClient>
-                <UseCaseClient>
-                  <StaticImage
-                    src="../../images/unilever.png"
-                    alt="unilever logo"
-                  ></StaticImage>
-                </UseCaseClient>
+              <div className="flex">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-2">
+                  <UseCaseClient>
+                    <StaticImage
+                      src="../../images/starling.png"
+                      alt="starling logo"
+                    ></StaticImage>
+                  </UseCaseClient>
+                  <UseCaseClient>
+                    <StaticImage
+                      src="../../images/mindbridge.png"
+                      alt="mindbridge logo"
+                    ></StaticImage>
+                  </UseCaseClient>
+                  <UseCaseClient>
+                    <StaticImage
+                      src="../../images/hired.png"
+                      alt="hired logo"
+                    ></StaticImage>
+                  </UseCaseClient>
+                  <UseCaseClient>
+                    <StaticImage
+                      src="../../images/unilever.png"
+                      alt="unilever logo"
+                    ></StaticImage>
+                  </UseCaseClient>
+                </div>
               </div>
             </div>
           </div>
-          <div className="flex-1 space-y-4 flex flex-col justify-end">
+          <div className="flex-1 space-y-4 flex flex-col justify-end items-center">
             <UseCaseCard title="Enterprise-Grade AI Assurance">
               <div>
                 Our auditing process allows your enterprise to adopt AI with
