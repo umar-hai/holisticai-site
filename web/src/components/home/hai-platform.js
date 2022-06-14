@@ -54,6 +54,7 @@ export default function HaiPlatform() {
             <StaticImage
               quality={100}
               src="../../images/hai-platform.png"
+              alt=""
             ></StaticImage>
           </div>
         </div>

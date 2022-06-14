@@ -13,11 +13,11 @@ export default function FeaturedIn() {
           </Title>
         </div>
         <div className="mt-20 flex justify-between">
-          <StaticImage src="../../images/jiggle.png"></StaticImage>
-          <StaticImage src="../../images/jiggle.png"></StaticImage>
-          <StaticImage src="../../images/jiggle.png"></StaticImage>
-          <StaticImage src="../../images/jiggle.png"></StaticImage>
-          <StaticImage src="../../images/jiggle.png"></StaticImage>
+          <StaticImage alt="" src="../../images/jiggle.png"></StaticImage>
+          <StaticImage alt="" src="../../images/jiggle.png"></StaticImage>
+          <StaticImage alt="" src="../../images/jiggle.png"></StaticImage>
+          <StaticImage alt="" src="../../images/jiggle.png"></StaticImage>
+          <StaticImage alt="" src="../../images/jiggle.png"></StaticImage>
         </div>
       </HaiContainer>
     </section>
