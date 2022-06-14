@@ -1,6 +1,5 @@
 import * as React from "react";
 import Footer from "../components/footer";
-import Layout from "../components/layout";
 import Navbar from "../components/header/navbar";
 
 export default function CookiePolicy() {

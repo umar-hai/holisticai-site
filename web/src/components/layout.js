@@ -1,6 +1,4 @@
-import { Link, useStaticQuery, graphql } from "gatsby";
 import React from "react";
-import Hero from "./header/hero";
 import Navbar from "./header/navbar";
 import Seo from "./seo";
 

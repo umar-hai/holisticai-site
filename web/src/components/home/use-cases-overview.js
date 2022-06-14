@@ -1,7 +1,6 @@
 import * as React from "react";
 import Title from "../../title";
 import HaiContainer from "../hai-container";
-import WidgetCard from "../widget-card";
 import UseCaseCard from "./use-case-card";
 import { StaticImage } from "gatsby-plugin-image";
 import UseCaseClient from "./use-case-client";
