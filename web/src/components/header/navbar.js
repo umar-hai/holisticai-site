@@ -6,7 +6,7 @@ import ButtonLink from "../button-link";
 export default function Navbar() {
   return (
     <nav className="flex justify-between items-center   bg-base-purple h-36">
-      <div className="flex justify-between items-center px-10 container mx-auto">
+      <div className="flex justify-between items-center px-10 container mx-auto z-10">
         <Link to="/">
           <StaticImage src="../../images/logo-navbar.png" alt=""></StaticImage>
         </Link>
