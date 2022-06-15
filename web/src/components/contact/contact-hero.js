@@ -2,6 +2,7 @@ import * as React from "react";
 import Title from "../../title";
 import { StaticImage } from "gatsby-plugin-image";
 import ContactIconInfo from "./contact-icon-info";
+import HaiContainer from "../hai-container";
 
 export default function ContactHero() {
   return (
@@ -20,7 +21,7 @@ export default function ContactHero() {
           placeholder="blurred"
         ></StaticImage>
       </div>
-      <div className="container mx-auto px-28 pt-28 pb-20">
+      <HaiContainer>
         <div className="flex justify-center flex-col items-center">
           <Title classNames="text-white">Contact Us</Title>
         </div>
@@ -29,8 +30,8 @@ export default function ContactHero() {
           <span className="text-inactive-base-purple font-bold">demo</span> or
           say hello!{" "}
         </div>
-        <div className="mt-24">
-          <div className="flex justify-center gap-40">
+        <div className="mt-10 lg:mt-24">
+          <div className="flex flex-col gap-10 items-center lg:flex-row justify-center lg:gap-40">
             <ContactIconInfo type="Email" value="we@holisticai.com">
               <StaticImage
                 src="../../images/email.png"
@@ -57,7 +58,7 @@ export default function ContactHero() {
             </ContactIconInfo>
           </div>
         </div>
-      </div>
+      </HaiContainer>
     </header>
   );
 }
