@@ -1,23 +1,20 @@
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
+import HaiContainer from "./hai-container";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-dark ">
-      <div className="container mx-auto px-28 py-16">
+      <HaiContainer>
         <div className="grid grid-cols-1 lg:grid-cols-3">
-          <div className="flex ">
-            <div>
-              <Link to="/">
-                <StaticImage
-                  src="../images/logo-footer.png"
-                  alt=""
-                ></StaticImage>
-              </Link>
-            </div>
+          <div>
+            <Link to="/">
+              <StaticImage src="../images/logo-footer.png" alt=""></StaticImage>
+            </Link>
           </div>
+
           <div>
             <h3 className="font-bold text-[22px] text-white mt-10 lg:mt-2">
               Explore
@@ -64,9 +61,9 @@ export default function Footer() {
             <Link to="/cookie-policy">Cookie Policy</Link>
           </div>
         </div> */}
-      </div>
+      </HaiContainer>
       <div className="border-t border-text-secondary border-opacity-50">
-        <div className="container mx-auto px-28 py-5 flex justify-between">
+        <div className="container mx-auto px-6 lg:px-8 xl:px-28 py-5 flex justify-between">
           <div className="text-white font-semibold font-roboto text-sm">
             {currentYear}. All rights reserved.
           </div>
