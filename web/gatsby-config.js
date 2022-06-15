@@ -28,6 +28,12 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-gdpr-cookies",
+      options: {
+        googleAnalytics: { trackingId: "G-J4D053P3R9" },
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
