@@ -22,7 +22,9 @@ export default function Hero() {
       </div>
       <div className="container mx-auto px-6 lg:px-8 xl:px-28 pt-5 pb-20">
         <Title classNames="text-white w-auto lg:w-[624px]">
-          <div>Global Leaders in AI Risk Management</div>
+          <div>
+            Global Leaders <br className="lg:hidden" /> in AI Risk Management
+          </div>
         </Title>
         <div className="flex xl:block">
           <div className="flex-1">
