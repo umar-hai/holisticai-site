@@ -10,7 +10,7 @@ export default function SolvingTrust() {
       <HaiContainer>
         <div className="flex justify-center flex-col items-center">
           <Title classNames="text-white " dividerColor="border-base-purple">
-            Solivng Trust in AI
+            Solving Trust <br className="lg:hidden" /> in AI
           </Title>
         </div>
         <div className="text-inactive-blue flex mt-10">
