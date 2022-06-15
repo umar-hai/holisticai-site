@@ -6,7 +6,7 @@ import ButtonLink from "../button-link";
 export default function Navbar() {
   return (
     <nav className="bg-base-purple h-auto lg:h-36">
-      <div className="h-full p-4 gap-4  flex flex-col lg:p-0 lg:gap-0 lg:flex-row justify-between items-center px-10 container mx-auto z-10">
+      <div className="h-full py-4 gap-4  flex flex-col lg:py-0 lg:gap-0 lg:flex-row justify-between items-center px-10 container mx-auto z-10">
         <Link to="/">
           <StaticImage src="../../images/logo-navbar.png" alt=""></StaticImage>
         </Link>
