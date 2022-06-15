@@ -10,7 +10,7 @@ export default function Navbar() {
         <Link to="/">
           <StaticImage src="../../images/logo-navbar.png" alt=""></StaticImage>
         </Link>
-        <ul className="text-white flex space-x-12 font-semibold text-[19px] items-center">
+        <ul className="text-white flex space-x-12 font-semibold text-[19px] items-center z-10">
           {/* <li>Home</li>
           <li>Use cases</li>
           <li>Resources</li>
