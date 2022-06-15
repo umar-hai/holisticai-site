@@ -28,7 +28,7 @@ export default function Hero() {
         </Title>
         <div className="flex xl:block">
           <div className="flex-1">
-            <div className="w-auto lg:w-[509px] mt-10 text-white font-roboto">
+            <div className="w-auto xl:w-[509px] mt-10 text-white font-roboto">
               <p className="mb-10">
                 <span className="text-inactive-base-purple">Holistic AI</span>{" "}
                 ensures that enterprises can adopt AI with confidence and
@@ -42,6 +42,7 @@ export default function Hero() {
                 <StaticImage
                   src="../../images/hero-screen-sm.png"
                   quality={100}
+                  width={380}
                   alt=""
                 ></StaticImage>
               </div>
@@ -63,6 +64,7 @@ export default function Hero() {
               <StaticImage
                 src="../../images/hero-screen-sm.png"
                 quality={100}
+                width={380}
                 alt=""
               ></StaticImage>
             </div>
