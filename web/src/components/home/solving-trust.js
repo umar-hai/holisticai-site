@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 export default function SolvingTrust() {
   return (
-    <section className="bg-dark">
+    <section className="bg-dark border-b border-b-text-secondary border-opacity-50">
       <HaiContainer>
         <div className="flex justify-center flex-col items-center">
           <Title classNames="text-white " dividerColor="border-base-purple">
