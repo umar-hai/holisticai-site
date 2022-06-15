@@ -11,8 +11,8 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.holisticai.com",
     title: "Holistic AI - Solving Trust in AI",
-    description: "Algorithms to Safeguard Society",
-    image: "https://holistic-ai.mo.cloudinary.net/hai-logo.png",
+    description: "Global leaders in AI risk management",
+    image: "https://holistic-ai.mo.cloudinary.net/icon-bg-01.png",
   },
   plugins: [
     "gatsby-plugin-postcss",
