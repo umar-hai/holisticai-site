@@ -1,36 +1,21 @@
 import * as React from "react";
-import Title from "../../title";
 import { StaticImage } from "gatsby-plugin-image";
 import ContactIconInfo from "./contact-icon-info";
-import HaiContainer from "../hai-container";
+import HeroSecondary from "../header/hero-secondary";
 
 export default function ContactHero() {
   return (
-    <header className="bg-base-purple relative">
-      <div className="absolute right-0 bottom-0">
-        <StaticImage
-          src="../../images/hai-logo-bg-1.png"
-          alt=""
-          placeholder="blurred"
-        ></StaticImage>
-      </div>
-      <div className="absolute left-0 bottom-0">
-        <StaticImage
-          src="../../images/hai-logo-bg-2.png"
-          alt=""
-          placeholder="blurred"
-        ></StaticImage>
-      </div>
-      <HaiContainer>
-        <div className="flex justify-center flex-col items-center">
-          <Title classNames="text-white">Contact Us</Title>
-        </div>
-        <div className="text-center text-[22px] text-white font-roboto mt-10">
-          Get in touch to request a{" "}
-          <span className="text-inactive-base-purple font-bold">demo</span> or
-          say hello!{" "}
-        </div>
-        <div className="mt-10 lg:mt-24">
+    <HeroSecondary>
+      {{
+        title: "Contact Us",
+        subtitle: (
+          <>
+            Get in touch to request a{" "}
+            <span className="text-inactive-base-purple font-bold">demo</span> or
+            say hello!{" "}
+          </>
+        ),
+        content: (
           <div className="flex flex-col gap-10 items-center lg:flex-row justify-center lg:gap-40">
             <ContactIconInfo type="Email" value="we@holisticai.com">
               <StaticImage
@@ -57,8 +42,8 @@ export default function ContactHero() {
               ></StaticImage>
             </ContactIconInfo>
           </div>
-        </div>
-      </HaiContainer>
-    </header>
+        ),
+      }}
+    </HeroSecondary>
   );
 }
