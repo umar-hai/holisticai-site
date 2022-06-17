@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import Hero from "../components/header/hero";
 import AiAuditing from "../components/home/ai-auditing";
 import AiRiskManagement from "../components/home/ai-risk-management";
+import BookCall from "../components/home/book-call";
 import FeaturedIn from "../components/home/featured-in";
 import HaiPlatform from "../components/home/hai-platform";
 import ImpactAi from "../components/home/impact-ai";
@@ -26,6 +27,7 @@ export default function IndexPage() {
             <AiAuditing></AiAuditing>
             <SolvingTrust></SolvingTrust>
             {/* <OurPartners></OurPartners> */}
+            <BookCall></BookCall>
             <Footer></Footer>
           </>
         ),
