@@ -5,8 +5,8 @@ import {
   filterOutDocsWithoutSlugs,
   mapEdgesToNodes,
 } from "../../lib/helpers";
-import BlogPostPreview from "../blog-post-preview";
 import { Link } from "gatsby";
+import BlogPostPreviewCard from "./blog-post-preview-card";
 
 export default function BlogList({ data }) {
   const postNodes = (data || {}).posts
@@ -16,25 +16,29 @@ export default function BlogList({ data }) {
     : [];
 
   return (
-    <HaiContainer>
-      {postNodes && (
-        <div>
-          <h2>Latest blog posts</h2>
-          <ul>
-            {postNodes &&
-              postNodes.map((node) => (
-                <li key={node.id}>
-                  <BlogPostPreview {...node} isInList />
-                </li>
-              ))}
-          </ul>
-          {
-            <div>
-              <Link to="/archive/">Browse more</Link>
-            </div>
-          }
+    <section className="bg-light">
+      <HaiContainer>
+        <div className="text-text-title text-[22px] font-bold">
+          All Blog Posts
         </div>
-      )}
-    </HaiContainer>
+        {postNodes && (
+          <div className="inline-block">
+            <div className="gap-x-2 gap-y-7 grid grid-cols-2">
+              {postNodes &&
+                postNodes.map((node) => (
+                  <div key={node.id}>
+                    <BlogPostPreviewCard {...node} isInList />
+                  </div>
+                ))}
+            </div>
+            {
+              <div>
+                <Link to="/archive/">Browse more</Link>
+              </div>
+            }
+          </div>
+        )}
+      </HaiContainer>
+    </section>
   );
 }
