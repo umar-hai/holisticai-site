@@ -11,9 +11,33 @@ export default function Layout({
   image = false,
   path = false,
 }) {
+  const [showNavbar, setShowNavbar] = React.useState(false);
+
+  const handler = () => {
+    if (window.scrollY > 144) {
+      setShowNavbar(true);
+    } else {
+      setShowNavbar(false);
+    }
+  };
+
+  React.useEffect(() => {
+    document.addEventListener("scroll", handler);
+
+    return function cleanup() {
+      document.removeEventListener("scroll", handler);
+    };
+  });
+
   return (
     <>
-      <Navbar></Navbar>
+      {showNavbar ? (
+        <div className={`fixed left-0 right-0 top-0 z-10 ${showNavbar}`}>
+          <Navbar></Navbar>
+        </div>
+      ) : (
+        <></>
+      )}
       <Seo title={title} description={description} image={image} path={path} />
       {children.hero}
 
