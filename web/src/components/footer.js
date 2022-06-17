@@ -68,9 +68,9 @@ export default function Footer() {
             {currentYear}. All rights reserved.
           </div>
           <div className="text-text-secondary flex gap-3">
-            <Link to="https://hai-data.s3.eu-west-2.amazonaws.com/Holistic+AI+-+Website+Privacy+Policy+-+2022-04-10.pdf">
+            {/* <Link to="https://hai-data.s3.eu-west-2.amazonaws.com/Holistic+AI+-+Website+Privacy+Policy+-+2022-04-10.pdf">
               Privacy Policy
-            </Link>
+            </Link> */}
             <Link to="/cookie-policy">Cookie Policy</Link>
           </div>
         </div>
