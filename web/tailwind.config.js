@@ -7,6 +7,9 @@ module.exports = {
       lg: "960px",
       xl: "1440px",
     },
+    backgroundImage: {
+      search: "url('https://holistic-ai.mo.cloudinary.net/search.svg')",
+    },
     extend: {
       colors: {
         "base-purple": "#5b42e4",
