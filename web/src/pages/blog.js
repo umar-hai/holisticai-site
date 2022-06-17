@@ -1,15 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
-import {
-  filterOutDocsPublishedInTheFuture,
-  filterOutDocsWithoutSlugs,
-  mapEdgesToNodes,
-} from "../lib/helpers";
-import BlogPostPreviewList from "../components/blog-post-preview-list";
-import Container from "../components/container";
+
 import GraphQLErrorList from "../components/graphql-error-list";
 import Layout from "../components/layout";
 import HeroSecondary from "../components/header/hero-secondary";
+import BlogList from "../components/blog/blog-list";
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -70,12 +65,6 @@ const IndexPage = (props) => {
     );
   }
 
-  const postNodes = (data || {}).posts
-    ? mapEdgesToNodes(data.posts)
-        .filter(filterOutDocsWithoutSlugs)
-        .filter(filterOutDocsPublishedInTheFuture)
-    : [];
-
   return (
     <Layout>
       {{
@@ -86,17 +75,7 @@ const IndexPage = (props) => {
             }}
           </HeroSecondary>
         ),
-        main: (
-          <Container>
-            {postNodes && (
-              <BlogPostPreviewList
-                title="Latest blog posts"
-                nodes={postNodes}
-                browseMoreHref="/archive/"
-              />
-            )}
-          </Container>
-        ),
+        main: <BlogList data={data}></BlogList>,
       }}
     </Layout>
   );
