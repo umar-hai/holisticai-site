@@ -24,7 +24,7 @@ export default function Footer() {
                 <Link to="/">Home</Link>
               </li>
               <li className="mt-8">
-                <Link to="contact">Request Demo</Link>
+                <Link to="/contact">Request Demo</Link>
               </li>
             </ul>
           </div>
