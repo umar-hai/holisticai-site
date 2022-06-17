@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-
+import Footer from "../components/footer";
 import GraphQLErrorList from "../components/graphql-error-list";
 import Layout from "../components/layout";
 import HeroSecondary from "../components/header/hero-secondary";
@@ -84,7 +84,12 @@ const IndexPage = (props) => {
             }}
           </HeroSecondary>
         ),
-        main: <BlogList data={data}></BlogList>,
+        main: (
+          <>
+            <BlogList data={data}></BlogList>
+            <Footer></Footer>
+          </>
+        ),
       }}
     </Layout>
   );
