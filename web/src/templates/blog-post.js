@@ -1,10 +1,9 @@
 import { graphql } from "gatsby";
 import BlogPost from "../components/blog-post";
 import React from "react";
-import GraphQLErrorList from "../components/graphql-error-list";
 import Layout from "../components/layout";
-import Container from "../components/container";
 import { toPlainText } from "../lib/helpers";
+import HeroSecondary from "../components/header/hero-secondary";
 
 export const query = graphql`
   query BlogPostTemplateQuery($id: String!) {
@@ -64,13 +63,10 @@ const BlogPostTemplate = (props) => {
       title={`Holistic AI - ${post.title || "Untitled"}`}
       description={toPlainText(post._rawExcerpt)}
     >
-      {errors && (
-        <Container>
-          <GraphQLErrorList errors={errors} />
-        </Container>
-      )}
-
-      {post && <BlogPost {...post} />}
+      {{
+        hero: <HeroSecondary>{{ title: "Blog Post" }}</HeroSecondary>,
+        main: post && <BlogPost {...post} />,
+      }}
     </Layout>
   );
 };
