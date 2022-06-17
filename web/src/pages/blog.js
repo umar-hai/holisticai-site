@@ -9,6 +9,7 @@ import BlogPostPreviewList from "../components/blog-post-preview-list";
 import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
 import Layout from "../components/layout";
+import HeroSecondary from "../components/header/hero-secondary";
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -76,16 +77,27 @@ const IndexPage = (props) => {
     : [];
 
   return (
-    <Layout title="Holistic AI - Blog">
-      <Container>
-        {postNodes && (
-          <BlogPostPreviewList
-            title="Latest blog posts"
-            nodes={postNodes}
-            browseMoreHref="/archive/"
-          />
-        )}
-      </Container>
+    <Layout>
+      {{
+        hero: (
+          <HeroSecondary>
+            {{
+              title: "Blog",
+            }}
+          </HeroSecondary>
+        ),
+        main: (
+          <Container>
+            {postNodes && (
+              <BlogPostPreviewList
+                title="Latest blog posts"
+                nodes={postNodes}
+                browseMoreHref="/archive/"
+              />
+            )}
+          </Container>
+        ),
+      }}
     </Layout>
   );
 };
