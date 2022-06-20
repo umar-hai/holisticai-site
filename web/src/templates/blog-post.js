@@ -4,6 +4,8 @@ import React from "react";
 import Layout from "../components/layout";
 import { toPlainText } from "../lib/helpers";
 import HeroSecondary from "../components/header/hero-secondary";
+import BookCall from "../components/home/book-call";
+import Footer from "../components/footer";
 
 export const query = graphql`
   query BlogPostTemplateQuery($id: String!) {
@@ -65,7 +67,13 @@ const BlogPostTemplate = (props) => {
     >
       {{
         hero: <HeroSecondary>{{ title: "Blog Post" }}</HeroSecondary>,
-        main: post && <BlogPost {...post} />,
+        main: post && (
+          <>
+            <BlogPost {...post} />
+            <BookCall></BookCall>
+            <Footer></Footer>
+          </>
+        ),
       }}
     </Layout>
   );
