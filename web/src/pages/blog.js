@@ -5,6 +5,7 @@ import GraphQLErrorList from "../components/graphql-error-list";
 import Layout from "../components/layout";
 import HeroSecondary from "../components/header/hero-secondary";
 import BlogList from "../components/blog/blog-list";
+import BookCall from "../components/home/book-call";
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -87,6 +88,7 @@ const IndexPage = (props) => {
         main: (
           <>
             <BlogList data={data}></BlogList>
+            <BookCall></BookCall>
             <Footer></Footer>
           </>
         ),
