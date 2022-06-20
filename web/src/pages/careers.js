@@ -1,5 +1,6 @@
 import * as React from "react";
 import OpenPositions from "../components/careers/open-positions";
+import Footer from "../components/footer";
 import HeroSecondary from "../components/header/hero-secondary";
 import Layout from "../components/layout";
 
