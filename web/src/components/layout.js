@@ -22,6 +22,8 @@ export default function Layout({
   };
 
   React.useEffect(() => {
+    setShowNavbar(window.scrollY > 0);
+
     document.addEventListener("scroll", handler);
 
     return function cleanup() {
