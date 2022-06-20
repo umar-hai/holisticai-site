@@ -10,6 +10,7 @@ import ImpactAi from "../components/home/impact-ai";
 // import OurPartners from "../components/home/our-partners";
 import SolvingTrust from "../components/home/solving-trust";
 import UseCasesOverview from "../components/home/use-cases-overview";
+import JoinHolistic from "../components/join-holistic";
 import Layout from "../components/layout";
 
 export default function IndexPage() {
@@ -26,6 +27,7 @@ export default function IndexPage() {
             <AiRiskManagement></AiRiskManagement>
             <AiAuditing></AiAuditing>
             <SolvingTrust></SolvingTrust>
+            <JoinHolistic></JoinHolistic>
             {/* <OurPartners></OurPartners> */}
             <BookCall></BookCall>
             <Footer></Footer>
