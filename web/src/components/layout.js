@@ -38,7 +38,9 @@ export default function Layout({
       </div>
 
       <Seo title={title} description={description} image={image} path={path} />
-      <div className={showNavbar && "mt-[144px]"}>{children.hero}</div>
+      <div className={showNavbar ? "mt-[144px]" : undefined}>
+        {children.hero}
+      </div>
 
       <main>{children.main}</main>
       <CookieConsent
