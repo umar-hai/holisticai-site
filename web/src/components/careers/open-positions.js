@@ -18,7 +18,7 @@ export default function OpenPositions() {
   const jobs = data.allSanityJobOpening.nodes;
 
   return (
-    <section id="open-positions">
+    <section id="open-positions" className="bg-light">
       <HaiContainer>
         <MasterDetail
           data={jobs.map((job) => ({
