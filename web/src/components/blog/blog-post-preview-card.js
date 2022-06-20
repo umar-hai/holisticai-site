@@ -8,7 +8,7 @@ import { format } from "date-fns";
 export default function BlogPostPreviewCard(props) {
   return (
     <Link to={getBlogUrl(props.publishedAt, props.slug.current)}>
-      <div className="max-w-[293px] shadow-hai p-5 rounded-2xl bg-white bg-opacity-40 flex-col flex group hover:bg-opacity-100 hover:scale-[1.01] transition-all">
+      <div className="max-w-full lg:max-w-[293px] shadow-hai p-5 rounded-2xl bg-white bg-opacity-40 flex-col flex group hover:bg-opacity-100 hover:scale-[1.01] transition-all">
         <div className="flex gap-1 items-center">
           <div className="flex">
             <StaticImage
