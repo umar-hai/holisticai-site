@@ -26,6 +26,7 @@
 }
 
 .grid {
+  margin-bottom: 35px;
   @media (--media-min-medium) {
     display: grid;
     grid-template-columns: 1fr;

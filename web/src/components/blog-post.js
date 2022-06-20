@@ -6,59 +6,80 @@ import PortableText from "./portableText";
 import React from "react";
 import { buildImageObj } from "../lib/helpers";
 import { imageUrlFor } from "../lib/image-url";
+import HaiContainer from "./hai-container";
+import BlogInfo from "./blog/blog-info";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 function BlogPost(props) {
-  const {
-    _rawBody,
-    authors,
-    categories,
-    title,
-    mainImage,
-    publishedAt,
-  } = props;
+  const { _rawBody, authors, categories, title, mainImage, publishedAt } =
+    props;
+
+  console.log(authors);
   return (
-    <article className={styles.root}>
-      {mainImage && mainImage.asset && (
-        <div className={styles.mainImage}>
-          <img
-            src={imageUrlFor(buildImageObj(mainImage))
-              .width(1200)
-              .height(Math.floor((9 / 16) * 1200))
-              .fit("crop")
-              .auto("format")
-              .url()}
-            alt={mainImage.alt}
-          />
-        </div>
-      )}
-      <Container>
-        <div className={styles.grid}>
-          <div className={styles.mainContent}>
-            <h1 className={styles.title}>{title}</h1>
-            {_rawBody && <PortableText blocks={_rawBody} />}
-          </div>
-          <aside className={styles.metaContent}>
-            {publishedAt && (
-              <div className={styles.publishedAt}>
-                {differenceInDays(new Date(publishedAt), new Date()) > 3
+    <article>
+      <HaiContainer>
+        <Container>
+          <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row justify-between pb-9 border-b">
+            <BlogInfo
+              title="Written by"
+              subtitle={authors?.slice(0, 1).map((x) => x.author.name) || ""}
+            ></BlogInfo>
+            <BlogInfo
+              title="Category"
+              subtitle={
+                categories
+                  ?.slice(0, 2)
+                  ?.map((category) => category.title)
+                  ?.join(",") || ""
+              }
+            ></BlogInfo>
+
+            <BlogInfo
+              title="Date"
+              subtitle={
+                differenceInDays(new Date(publishedAt), new Date()) > 3
                   ? formatDistance(new Date(publishedAt), new Date())
-                  : format(new Date(publishedAt), "MMMM Mo, yyyy")}
+                  : format(new Date(publishedAt), "MMMM Mo, yyyy")
+              }
+            ></BlogInfo>
+          </div>
+
+          <div className="my-9 text-base-blue font-bold text-[38px]">
+            {title}
+          </div>
+          {mainImage && mainImage.asset && (
+            <div className="mb-9">
+              <img
+                src={imageUrlFor(buildImageObj(mainImage))
+                  .width(1200)
+                  .height(Math.floor((9 / 16) * 1200))
+                  .fit("crop")
+                  .auto("format")
+                  .url()}
+                alt={mainImage.alt}
+              />
+            </div>
+          )}
+          <div className={styles.grid}>
+            <div className={styles.mainContent}>
+              {_rawBody && <PortableText blocks={_rawBody} />}
+            </div>
+          </div>
+          <div className="pt-9 border-t">
+            <Link className="font-bold text-base-blue text-[22px]" to="/blog">
+              <div className="flex items-center gap-3">
+                <StaticImage
+                  src="../images/left.png"
+                  alt=""
+                  quality={100}
+                ></StaticImage>
+                <span>Back to Blog Home</span>
               </div>
-            )}
-            {authors && <AuthorList items={authors} title="Authors" />}
-            {categories && (
-              <div className={styles.categories}>
-                <h3 className={styles.categoriesHeadline}>Categories</h3>
-                <ul>
-                  {categories.map((category) => (
-                    <li key={category._id}>{category.title}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </aside>
-        </div>
-      </Container>
+            </Link>
+          </div>
+        </Container>
+      </HaiContainer>
     </article>
   );
 }
