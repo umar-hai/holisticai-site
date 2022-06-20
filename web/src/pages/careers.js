@@ -8,7 +8,12 @@ export default function Careers() {
     <Layout>
       {{
         hero: <HeroSecondary>{{ title: "Careers" }}</HeroSecondary>,
-        main: <OpenPositions></OpenPositions>,
+        main: (
+          <>
+            <OpenPositions></OpenPositions>
+            <Footer></Footer>
+          </>
+        ),
       }}
     </Layout>
   );
