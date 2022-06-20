@@ -31,5 +31,5 @@ module.exports = {
       roboto: ["Roboto"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
