@@ -10,6 +10,7 @@ import HaiContainer from "./hai-container";
 import BlogInfo from "./blog/blog-info";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import ProseableText from "./prosable-text";
 
 function BlogPost(props) {
   const { _rawBody, authors, categories, title, mainImage, publishedAt } =
@@ -63,7 +64,7 @@ function BlogPost(props) {
           )}
           <div className={styles.grid}>
             <div className={styles.mainContent}>
-              {_rawBody && <PortableText blocks={_rawBody} />}
+              {_rawBody && <ProseableText value={_rawBody} />}
             </div>
           </div>
           <div className="pt-9 border-t">
