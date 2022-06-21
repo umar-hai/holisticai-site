@@ -9,7 +9,7 @@ export default function ImpactAi() {
       <HaiContainer>
         <Title
           classNames="text-base-blue lg:w-[790px]"
-          dividerColor="border-base-purple"
+          dividerColor="purple"
         >
           Impacting AI Deployment and Research at Scale
         </Title>

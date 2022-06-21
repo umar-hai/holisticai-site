@@ -9,7 +9,7 @@ export default function UseCasesOverview() {
   return (
     <section className="bg-dark">
       <HaiContainer>
-        <Title classNames="text-white" dividerColor="border-base-purple">
+        <Title classNames="text-white" dividerColor="purple">
           Better AI for Everyone
         </Title>
         <div className="flex flex-col xl:flex-row mt-10 xl:space-x-10">

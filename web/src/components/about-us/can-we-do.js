@@ -9,7 +9,7 @@ export default function CanWeDo() {
     <section className="bg-white">
       <HaiContainer>
         <div className="flex justify-center flex-col items-center">
-          <Title classNames="text-base-blue" dividerColor="border-base-purple">
+          <Title classNames="text-base-blue" dividerColor="purple">
             What can we do for you
           </Title>
         </div>

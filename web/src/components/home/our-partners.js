@@ -8,7 +8,7 @@ export default function OurPartners() {
     <section className="bg-white">
       <HaiContainer>
         <div className="flex justify-center flex-col items-center">
-          <Title classNames="text-base-blue" dividerColor="border-base-purple">
+          <Title classNames="text-base-blue" dividerColor="purple">
             Our Partners
           </Title>
         </div>

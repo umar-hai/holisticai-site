@@ -9,7 +9,7 @@ export default function StandOut() {
     <section className="bg-dark">
       <HaiContainer>
         <div className="flex justify-center flex-col items-center">
-          <Title classNames="text-white " dividerColor="border-base-purple">
+          <Title classNames="text-white " dividerColor="purple">
             What makes use stand out
           </Title>
         </div>

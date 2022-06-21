@@ -8,7 +8,7 @@ export default function AiAuditing() {
   return (
     <section className="bg-white">
       <HaiContainer>
-        <Title classNames="text-base-blue" dividerColor="border-base-purple">
+        <Title classNames="text-base-blue" dividerColor="purple">
           AI Auditing
         </Title>
         <div className="flex flex-col lg:flex-row space-x-10 mt-10">
