@@ -29,10 +29,18 @@ export default function Navbar() {
         </div>
         <Navbox open={navLinksOpen}></Navbox>
         <ul className="hidden xl:flex text-white space-x-12 font-semibold text-[19px] items-center z-10">
-          {/* <li>Home</li>
-          <li>Use cases</li>
-          <li>Resources</li>
-          <li>Company</li> */}
+          <li>
+            <Link to="/">Home</Link>{" "}
+          </li>
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
+          <li>
+            <Link to="/careers">Careers</Link>
+          </li>
+          <li>
+            <Link to="/about-us">About</Link>
+          </li>
           <li>
             <div>
               <ButtonLink

@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-dark ">
       <HaiContainer>
-        <div className="grid grid-cols-1 lg:grid-cols-3">
+        <div className="grid grid-cols-1 lg:grid-cols-4">
           <div>
             <Link to="/">
               <StaticImage src="../images/logo-footer.png" alt=""></StaticImage>
@@ -24,7 +24,23 @@ export default function Footer() {
                 <Link to="/">Home</Link>
               </li>
               <li className="mt-8">
+                <Link to="/careers">Careers</Link>
+              </li>
+              <li className="mt-8">
+                <Link to="/about-us">About</Link>
+              </li>
+              <li className="mt-8">
                 <Link to="/contact">Request Demo</Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold text-[22px] text-white mt-10 lg:mt-2">
+              Resources
+            </h3>
+            <ul className="text-text-secondary">
+              <li className="mt-8">
+                <Link to="/blog">Blog</Link>
               </li>
             </ul>
           </div>

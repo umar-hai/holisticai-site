@@ -8,7 +8,19 @@ export default function Navbox({ open }) {
         open ? "left-0" : "-left-full"
       }`}
     >
-      <ul className="text-white space-x-12 font-semibold text-[19px]">
+      <ul className="text-white space-y-4 font-semibold text-[19px]">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
+        <li>
+          <Link to="/careers">Careers</Link>
+        </li>
+        <li>
+          <Link to="/about-us">About</Link>
+        </li>
         <li>
           <Link to="/contact">Request a demo</Link>
         </li>
