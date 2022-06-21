@@ -18,8 +18,10 @@ export default function BlogList({ data }) {
   return (
     <section className="bg-light">
       <HaiContainer>
-        <div className="grid grid-cols-1 gap-10 xl:grid-cols-2">
-          <div>
+        <div
+          className="flex flex-col xl:block" /*className="grid grid-cols-1 gap-10 xl:grid-cols-2"*/
+        >
+          {/* <div>
             <div className="text-text-title text-[22px] font-bold mb-12">
               Search
             </div>
@@ -29,14 +31,14 @@ export default function BlogList({ data }) {
                 className="appearance-none bg-transparent outline-none p-6 pr-14 w-full h-full bg-search bg-no-repeat bg-right border-r-[20px] border-transparent"
               />
             </form>
-          </div>
-          <div>
+          </div> */}
+          <div className="m-auto">
             <div className="text-text-title text-[22px] font-bold mb-10">
               All Blog Posts
             </div>
             {postNodes && (
               <div className="inline-block">
-                <div className="gap-x-2 gap-y-7 grid grid-cols-1 lg:grid-cols-2">
+                <div className="gap-x-2 gap-y-7 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4">
                   {postNodes &&
                     postNodes.map((node) => (
                       <div key={node.id}>
@@ -44,11 +46,6 @@ export default function BlogList({ data }) {
                       </div>
                     ))}
                 </div>
-                {
-                  <div>
-                    <Link to="/archive/">Browse more</Link>
-                  </div>
-                }
               </div>
             )}
           </div>
