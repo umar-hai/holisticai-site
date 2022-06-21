@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import HaiContainer from "../hai-container";
+import Metric from "../metric";
 
 export default function CompanyInfo() {
   return (
@@ -25,6 +26,30 @@ export default function CompanyInfo() {
               working with regulators, policy-makers and engineers
               internationally. No matter at which maturity stage and scale,
               Holistic AI has a solution for you.
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-28">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 justify-center gap-3 flex-wrap">
+              <Metric
+                value="10k+"
+                text="Systems covered in more 
+than 20 jurisdictions"
+              ></Metric>
+              <Metric
+                value="1k+"
+                text="Technical and Governance 
+            risk mitigations deployed"
+              ></Metric>
+              <Metric
+                value="100+"
+                text="Audits and Assurance 
+            of AI Projects"
+              ></Metric>
+              <Metric
+                value="50+"
+                text="Research Papers in AI Safety, Ethics, and Governance"
+              ></Metric>
             </div>
           </div>
         </div>
