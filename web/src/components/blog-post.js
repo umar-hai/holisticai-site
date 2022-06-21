@@ -16,7 +16,6 @@ function BlogPost(props) {
   const { _rawBody, authors, categories, title, mainImage, publishedAt } =
     props;
 
-  console.log(authors);
   return (
     <article>
       <HaiContainer>
