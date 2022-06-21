@@ -7,7 +7,7 @@ export default function JobLocation() {
       <div className="flex">
         <StaticImage alt="" src="../../images/pin.png"></StaticImage>
       </div>
-      <div className="font-manrope text-text-primary font-normal text-base">
+      <div className="font-manrope text-text-primary font-normal text-base text-text-body">
         London /Remote
       </div>
     </div>
