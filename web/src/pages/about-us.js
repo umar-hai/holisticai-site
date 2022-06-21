@@ -4,6 +4,7 @@ import CompanyInfo from "../components/about-us/company-info";
 import StandOut from "../components/about-us/stand-out";
 import Footer from "../components/footer";
 import HeroSecondary from "../components/header/hero-secondary";
+import BookCall from "../components/home/book-call";
 import Layout from "../components/layout";
 
 export default function AboutUs() {
@@ -22,6 +23,7 @@ export default function AboutUs() {
             <CompanyInfo></CompanyInfo>
             <CanWeDo></CanWeDo>
             <StandOut></StandOut>
+            <BookCall></BookCall>
             <Footer></Footer>
           </>
         ),
