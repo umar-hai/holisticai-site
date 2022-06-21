@@ -1,6 +1,7 @@
 import * as React from "react";
 import CanWeDo from "../components/about-us/can-we-do";
 import CompanyInfo from "../components/about-us/company-info";
+import OurTeam from "../components/about-us/our-team";
 import StandOut from "../components/about-us/stand-out";
 import Footer from "../components/footer";
 import HeroSecondary from "../components/header/hero-secondary";
@@ -23,6 +24,7 @@ export default function AboutUs() {
             <CompanyInfo></CompanyInfo>
             <CanWeDo></CanWeDo>
             <StandOut></StandOut>
+            {/* <OurTeam></OurTeam> */}
             <BookCall></BookCall>
             <Footer></Footer>
           </>
