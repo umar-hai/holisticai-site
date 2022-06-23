@@ -7,6 +7,7 @@ import BookCall from "../components/home/book-call";
 import FeaturedIn from "../components/home/featured-in";
 import HaiPlatform from "../components/home/hai-platform";
 import ImpactAi from "../components/home/impact-ai";
+import IntegrationsAndCoverage from "../components/home/integrations-and-coverage";
 // import OurPartners from "../components/home/our-partners";
 import SolvingTrust from "../components/home/solving-trust";
 import UseCasesOverview from "../components/home/use-cases-overview";
@@ -29,6 +30,7 @@ export default function IndexPage() {
             <SolvingTrust></SolvingTrust>
             <JoinHolistic></JoinHolistic>
             {/* <OurPartners></OurPartners> */}
+            <IntegrationsAndCoverage></IntegrationsAndCoverage>
             <BookCall></BookCall>
             <Footer></Footer>
           </>
