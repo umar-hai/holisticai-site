@@ -21,16 +21,24 @@ export default function Footer() {
             </h3>
             <ul className="text-text-secondary">
               <li className="mt-8">
-                <Link to="/">Home</Link>
+                <Link className="hover:text-stroke" to="/">
+                  Home
+                </Link>
               </li>
               <li className="mt-8">
-                <Link to="/careers">Careers</Link>
+                <Link className="hover:text-stroke" to="/careers">
+                  Careers
+                </Link>
               </li>
               <li className="mt-8">
-                <Link to="/about-us">About</Link>
+                <Link className="hover:text-stroke" to="/about-us">
+                  About
+                </Link>
               </li>
               <li className="mt-8">
-                <Link to="/contact">Request Demo</Link>
+                <Link className="hover:text-stroke" to="/contact">
+                  Request Demo
+                </Link>
               </li>
             </ul>
           </div>
@@ -40,7 +48,9 @@ export default function Footer() {
             </h3>
             <ul className="text-text-secondary">
               <li className="mt-8">
-                <Link to="/blog">Blog</Link>
+                <Link className="hover:text-stroke" to="/blog">
+                  Blog
+                </Link>
               </li>
             </ul>
           </div>
