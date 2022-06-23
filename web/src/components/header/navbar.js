@@ -39,7 +39,9 @@ export default function Navbar({ shrink }) {
           ></StaticImage>
         </Link>
         <Link
-          className={`${shrink ? "block min-w-[148px]" : "block lg:hidden"}`}
+          className={`${
+            shrink ? "block min-w-[148px] z-10" : "block lg:hidden z-10"
+          }`}
           to="/"
         >
           <StaticImage
@@ -69,38 +71,7 @@ export default function Navbar({ shrink }) {
               </Link>
             </li>
           ))}
-          {/* <li className="relative after:contents-[''] after:absolute after:bottom-0 after:left-2/4 after:-translate-x-2/4 after:w-5 after:h-1 after:bg-white pb-2">
-            <Link className="opacity-70 " activeClassName="opacity-100" to="/">
-              Home
-            </Link>{" "}
-          </li>
-          <li>
-            <Link
-              className="opacity-70 "
-              activeClassName="opacity-100"
-              to="/blog"
-            >
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="opacity-70 "
-              activeClassName="opacity-100"
-              to="/careers"
-            >
-              Careers
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="opacity-70 "
-              activeClassName="opacity-100"
-              to="/about-us"
-            >
-              About
-            </Link>
-          </li> */}
+
           <li>
             <div>
               <ButtonLink
