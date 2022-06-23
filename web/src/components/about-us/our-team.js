@@ -7,7 +7,10 @@ export default function OurTeam() {
     <section className="bg-dark">
       <HaiContainer>
         <div className="flex justify-center flex-col items-center">
-          <Title classNames="text-white" dividerColor="purple">
+          <Title
+            classNames="text-white"
+            dividerColor="bg-base-purple border-base-purple"
+          >
             Our Team
           </Title>
         </div>

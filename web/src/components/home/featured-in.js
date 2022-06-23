@@ -8,7 +8,10 @@ export default function FeaturedIn() {
     <section className="bg-white">
       <HaiContainer>
         <div className="flex justify-center flex-col items-center">
-          <Title classNames="text-base-blue" dividerColor="purple">
+          <Title
+            classNames="text-base-blue"
+            dividerColor="bg-base-purple border-base-purple"
+          >
             Featured in
           </Title>
         </div>

@@ -10,7 +10,10 @@ export default function IntegrationsAndCoverage() {
       <HaiContainer>
         <div>
           <div className="flex justify-center flex-col items-center">
-            <Title classNames="text-base-blue" dividerColor="purple">
+            <Title
+              classNames="text-base-blue"
+              dividerColor="bg-base-purple border-base-purple"
+            >
               Integrations and Coverage
             </Title>
           </div>

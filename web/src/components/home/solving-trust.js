@@ -9,7 +9,10 @@ export default function SolvingTrust() {
     <section className="bg-dark">
       <HaiContainer>
         <div className="flex justify-center flex-col items-center">
-          <Title classNames="text-white " dividerColor="purple">
+          <Title
+            classNames="text-white "
+            dividerColor="bg-base-purple border-base-purple"
+          >
             Solving Trust <br className="lg:hidden" /> in AI
           </Title>
         </div>

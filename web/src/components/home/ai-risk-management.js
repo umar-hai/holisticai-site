@@ -8,7 +8,10 @@ export default function AiRiskManagement() {
   return (
     <section className="bg-light">
       <HaiContainer>
-        <Title classNames="text-base-blue" dividerColor="purple">
+        <Title
+          classNames="text-base-blue"
+          dividerColor="bg-base-purple border-base-purple"
+        >
           AI Risk Management
         </Title>
         <div className="mt-10 text-[22px] font-bold max-w-[687px]">
