@@ -32,7 +32,7 @@ export const query = graphql`
 
   query IndexPageQuery {
     posts: allSanityPost(
-      limit: 24
+      limit: 50
       sort: { fields: [publishedAt], order: DESC }
       filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }
     ) {
