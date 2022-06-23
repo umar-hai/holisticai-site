@@ -8,6 +8,25 @@ import Navbox from "./navbox";
 export default function Navbar({ shrink }) {
   const [navLinksOpen, setNavLinksOpen] = React.useState(false);
 
+  const navLinks = [
+    {
+      link: "/",
+      text: "Home",
+    },
+    {
+      link: "/blog",
+      text: "Blog",
+    },
+    {
+      link: "/careers",
+      text: "Careers",
+    },
+    {
+      link: "/about-us",
+      text: "About",
+    },
+  ];
+
   return (
     <nav className="bg-base-purple h-full">
       <div className="h-full py-4 gap-4 flex lg:py-0 lg:gap-0 lg:flex-row justify-between items-center px-10 container mx-auto z-10">
@@ -39,7 +58,18 @@ export default function Navbar({ shrink }) {
         </div>
         <Navbox open={navLinksOpen} shrink={shrink}></Navbox>
         <ul className="hidden xl:flex text-white space-x-12 font-semibold text-[19px] items-center z-10">
-          <li>
+          {navLinks.map((navLink) => (
+            <li activeClassName="" className="">
+              <Link
+                className="opacity-70 relative after:contents-[''] hover:opacity-100 after:absolute after:bottom-0 after:left-2/4 after:hover:w-full after:transition-all after:duration-500 after:-translate-x-2/4 after:w-5 after:h-1 after:bg-white pb-2"
+                activeClassName="opacity-100 after:w-full"
+                to={navLink.link}
+              >
+                {navLink.text}
+              </Link>
+            </li>
+          ))}
+          {/* <li className="relative after:contents-[''] after:absolute after:bottom-0 after:left-2/4 after:-translate-x-2/4 after:w-5 after:h-1 after:bg-white pb-2">
             <Link className="opacity-70 " activeClassName="opacity-100" to="/">
               Home
             </Link>{" "}
@@ -70,7 +100,7 @@ export default function Navbar({ shrink }) {
             >
               About
             </Link>
-          </li>
+          </li> */}
           <li>
             <div>
               <ButtonLink
