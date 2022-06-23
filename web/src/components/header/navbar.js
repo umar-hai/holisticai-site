@@ -37,19 +37,39 @@ export default function Navbar({ shrink }) {
         >
           <Hamburger open={navLinksOpen}></Hamburger>
         </div>
-        <Navbox open={navLinksOpen}></Navbox>
+        <Navbox open={navLinksOpen} shrink={shrink}></Navbox>
         <ul className="hidden xl:flex text-white space-x-12 font-semibold text-[19px] items-center z-10">
           <li>
-            <Link to="/">Home</Link>{" "}
+            <Link className="opacity-70 " activeClassName="opacity-100" to="/">
+              Home
+            </Link>{" "}
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <Link
+              className="opacity-70 "
+              activeClassName="opacity-100"
+              to="/blog"
+            >
+              Blog
+            </Link>
           </li>
           <li>
-            <Link to="/careers">Careers</Link>
+            <Link
+              className="opacity-70 "
+              activeClassName="opacity-100"
+              to="/careers"
+            >
+              Careers
+            </Link>
           </li>
           <li>
-            <Link to="/about-us">About</Link>
+            <Link
+              className="opacity-70 "
+              activeClassName="opacity-100"
+              to="/about-us"
+            >
+              About
+            </Link>
           </li>
           <li>
             <div>
