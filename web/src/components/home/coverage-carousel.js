@@ -39,6 +39,7 @@ export default function CoverageCarousel({ title, description }) {
             link="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52021PC0206"
           >
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/eurlex.svg"
               height={65}
@@ -50,6 +51,7 @@ export default function CoverageCarousel({ title, description }) {
             text="UK AI Public Sector Standard"
           >
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/gov.uk_logo.png"
               height={65}
@@ -62,6 +64,7 @@ export default function CoverageCarousel({ title, description }) {
             text="OECD - AI Accountability Principle"
           >
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/oecd.png"
               height={65}
@@ -74,6 +77,7 @@ export default function CoverageCarousel({ title, description }) {
             text="New York City - Automated employment decision tools (Bias Audits)"
           >
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/NYCC.png"
               height={65}
@@ -85,6 +89,7 @@ export default function CoverageCarousel({ title, description }) {
             text="California - Worker rights: Workplace Technology Accountability Act (Proposal)"
           >
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/california.png"
               height={65}
@@ -96,6 +101,7 @@ export default function CoverageCarousel({ title, description }) {
             text="US Congress - Algorithmic Accountability Act of 2022 (Proposal)"
           >
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/congress.png"
               height={65}
@@ -107,6 +113,7 @@ export default function CoverageCarousel({ title, description }) {
             text="UK ICO Audit Framework"
           >
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/ico.png"
               height={65}
@@ -118,6 +125,7 @@ export default function CoverageCarousel({ title, description }) {
             text="UK AI Assurance Roadmap"
           >
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/gov.uk_logo.png"
               height={65}

@@ -30,6 +30,7 @@ export default function IntegrationCarousel({ title, description }) {
         <Carousel>
           <IntegrationCarouselItem link="https://scikit-learn.org/stable/">
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/scikit-learn-logo-small.png"
               height={65}
@@ -38,6 +39,7 @@ export default function IntegrationCarousel({ title, description }) {
           </IntegrationCarouselItem>
           <IntegrationCarouselItem link="https://pytorch.org/">
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/pytorch-logo.png"
               height={65}
@@ -46,6 +48,7 @@ export default function IntegrationCarousel({ title, description }) {
           </IntegrationCarouselItem>
           <IntegrationCarouselItem link="https://www.tensorflow.org/">
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/tensorflow.png"
               height={65}
@@ -55,6 +58,7 @@ export default function IntegrationCarousel({ title, description }) {
 
           <IntegrationCarouselItem link="https://databricks.com/">
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/databricks.png"
               height={65}
@@ -64,6 +68,7 @@ export default function IntegrationCarousel({ title, description }) {
 
           <IntegrationCarouselItem link="https://azure.microsoft.com/en-us/">
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/azure.png"
               height={65}
@@ -72,6 +77,7 @@ export default function IntegrationCarousel({ title, description }) {
           </IntegrationCarouselItem>
           <IntegrationCarouselItem link="https://aws.amazon.com/pm/sagemaker/">
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/sagemaker.png"
               height={65}
@@ -80,6 +86,7 @@ export default function IntegrationCarousel({ title, description }) {
           </IntegrationCarouselItem>
           <IntegrationCarouselItem link="https://h2o.ai/">
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/h2oai.png"
               height={65}
@@ -88,6 +95,7 @@ export default function IntegrationCarousel({ title, description }) {
           </IntegrationCarouselItem>
           <IntegrationCarouselItem link="https://xgboost.ai/">
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/xgboost.png"
               height={65}
@@ -96,6 +104,7 @@ export default function IntegrationCarousel({ title, description }) {
           </IntegrationCarouselItem>
           <IntegrationCarouselItem link="https://catboost.ai/">
             <StaticImage
+              placeholder="blurred"
               alt=""
               src="../../images/catboost.png"
               height={65}
