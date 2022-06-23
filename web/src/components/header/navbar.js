@@ -5,20 +5,30 @@ import ButtonLink from "../button-link";
 import Hamburger from "./hamburger";
 import Navbox from "./navbox";
 
-export default function Navbar() {
+export default function Navbar({ shrink }) {
   const [navLinksOpen, setNavLinksOpen] = React.useState(false);
 
   return (
-    <nav className="bg-base-purple h-28 lg:h-36">
+    <nav className="bg-base-purple h-full">
       <div className="h-full py-4 gap-4 flex lg:py-0 lg:gap-0 lg:flex-row justify-between items-center px-10 container mx-auto z-10">
-        <Link className="hidden lg:block" to="/">
-          <StaticImage src="../../images/logo-navbar.png" alt=""></StaticImage>
+        <Link className={`${shrink ? "hidden" : "hidden lg:block"}`} to="/">
+          <StaticImage
+            src="../../images/logo-navbar.png"
+            alt=""
+            quality={100}
+            placeholder="blurred"
+          ></StaticImage>
         </Link>
-        <Link className="block min-w-[148px] lg:hidden" to="/">
+        <Link
+          className={`${shrink ? "block min-w-[148px]" : "block lg:hidden"}`}
+          to="/"
+        >
           <StaticImage
             width={148}
             src="../../images/logo-navbar.png"
             alt=""
+            quality={100}
+            placeholder="blurred"
           ></StaticImage>
         </Link>
         <div

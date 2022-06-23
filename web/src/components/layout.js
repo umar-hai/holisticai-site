@@ -34,15 +34,15 @@ export default function Layout({
   return (
     <>
       <div
-        className={`${showNavbar ? "fixed left-0 right-0 top-0 z-10 " : ""}`}
+        className={`transition-all ${
+          showNavbar ? "fixed left-0 right-0 top-0 z-10 h-20" : "h-28 lg:h-36"
+        }`}
       >
-        <Navbar></Navbar>
+        <Navbar shrink={showNavbar}></Navbar>
       </div>
 
       <Seo title={title} description={description} image={image} path={path} />
-      <div className={showNavbar ? "mt-[144px]" : undefined}>
-        {children.hero}
-      </div>
+      <div className={showNavbar ? "mt-20" : undefined}>{children.hero}</div>
 
       <main>{children.main}</main>
       <CookieConsent
