@@ -97,7 +97,9 @@ export default function Footer() {
             {/* <Link to="https://hai-data.s3.eu-west-2.amazonaws.com/Holistic+AI+-+Website+Privacy+Policy+-+2022-04-10.pdf">
               Privacy Policy
             </Link> */}
-            <Link to="/cookie-policy">Cookie Policy</Link>
+            <Link className="hover:text-stroke" to="/cookie-policy">
+              Cookie Policy
+            </Link>
           </div>
         </div>
       </div>
