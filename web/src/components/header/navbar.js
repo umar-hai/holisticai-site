@@ -21,10 +21,10 @@ export default function Navbar({ shrink }) {
       link: "/careers",
       text: "Careers",
     },
-    {
-      link: "/about-us",
-      text: "About",
-    },
+    // {
+    //   link: "/about-us",
+    //   text: "About",
+    // },
   ];
 
   return (

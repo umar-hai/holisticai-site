@@ -30,11 +30,11 @@ export default function Footer() {
                   Careers
                 </Link>
               </li>
-              <li className="mt-8">
+              {/* <li className="mt-8">
                 <Link className="hover:text-stroke" to="/about-us">
                   About
                 </Link>
-              </li>
+              </li> */}
               <li className="mt-8">
                 <Link className="hover:text-stroke" to="/contact">
                   Request Demo
