@@ -63,7 +63,7 @@ export default function Navbar({ shrink }) {
           {navLinks.map((navLink) => (
             <li activeClassName="" className="">
               <Link
-                className="opacity-70 relative after:contents-[''] hover:opacity-100 after:absolute after:bottom-0 after:left-2/4 after:hover:w-full after:transition-all after:duration-500 after:-translate-x-2/4 after:w-5 after:h-1 after:bg-white pb-2"
+                className="opacity-70 relative after:contents-[''] hover:opacity-100 after:absolute after:bottom-0 after:left-2/4 after:hover:w-full after:transition-all after:duration-500 after:-translate-x-2/4 after:w-5 after:h-1 after:bg-white after:rounded-3xl pb-2"
                 activeClassName="opacity-100 after:w-full"
                 to={navLink.link}
               >
