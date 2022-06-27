@@ -17,7 +17,7 @@ export default function SolvingTrust() {
           </Title>
         </div>
         <div className="text-inactive-blue flex mt-10">
-          <div className="max-w-[475px] mx-auto text-center font-roboto">
+          <div className="max-w-[475px] mx-auto text-center font-bold text-[22px] ">
             To deliver our <span className="font-bold">mission</span>, we employ
             our practical knowledge and academic excellence in three different
             directions
