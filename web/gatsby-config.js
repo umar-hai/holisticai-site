@@ -40,6 +40,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: "gatsby-plugin-hubspot",
+      options: {
+        trackingCode: "25785988",
+        respectDNT: false,
+        productionOnly: false,
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
