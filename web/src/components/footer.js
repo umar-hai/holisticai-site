@@ -9,10 +9,18 @@ export default function Footer() {
     <footer className="bg-dark ">
       <HaiContainer>
         <div className="grid grid-cols-1 lg:grid-cols-4">
-          <div>
+          <div className="flex flex-col justify-between gap-8 lg:gap-0">
             <Link to="/">
               <StaticImage src="../images/logo-footer.png" alt=""></StaticImage>
             </Link>
+
+            <a
+              href="https://www.linkedin.com/company/holisticai/"
+              className="text-text-secondary hover:text-stroke"
+            >
+              <StaticImage src="../images/linked-in.png" alt=""></StaticImage>
+              <span className="ml-2 font-roboto text-sm">Follow us</span>
+            </a>
           </div>
 
           <div>
