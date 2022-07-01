@@ -46,7 +46,7 @@ export default function Layout({
 
       <main>{children.main}</main>
       <CookieConsent
-        location="bottom"
+        location="top"
         buttonText="Accept"
         declineButtonText="Decline"
         cookieName="gatsby-gdpr-google-analytics"
