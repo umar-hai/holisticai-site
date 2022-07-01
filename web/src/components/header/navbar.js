@@ -73,13 +73,7 @@ export default function Navbar({ shrink }) {
           ))}
 
           <li>
-            <div>
-              <ButtonLink
-                groupClass="min-w-[204px]"
-                link="/contact"
-                text="Request a demo"
-              ></ButtonLink>
-            </div>
+            <ButtonLink link="/contact" text="Request a demo"></ButtonLink>
           </li>
         </ul>
       </div>
