@@ -4,7 +4,7 @@ import HaiContainer from "../hai-container";
 
 export default function BookCall() {
   return (
-    <section className="bg-base-blue pointer-events-none hover:bg-base-purple">
+    <section className="transition-all duration-500 ease-in-out bg-base-blue pointer-events-none hover:bg-base-purple">
       <HaiContainer>
         <div className="text-center text-white font-bold text-[32px]">
           Interested in our company?

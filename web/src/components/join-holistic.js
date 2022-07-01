@@ -4,7 +4,7 @@ import HaiContainer from "./hai-container";
 
 export default function JoinHolistic() {
   return (
-    <section className="bg-dark bg-opacity-80 pointer-events-none hover:bg-opacity-100">
+    <section className="transition-all duration-500 ease-in-out bg-dark bg-opacity-80 pointer-events-none hover:bg-opacity-100">
       <HaiContainer>
         <div className="text-center text-white font-bold text-[32px]">
           Want to be part of our mission?
