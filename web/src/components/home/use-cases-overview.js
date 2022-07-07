@@ -57,10 +57,10 @@ export default function UseCasesOverview() {
           <div className="flex-1 space-y-4 flex flex-col justify-end items-center">
             <UseCaseCard title="Enterprise-Grade AI Assurance">
               <div>
-                Our auditing process allows your enterprise to adopt AI with
-                confidence, minimize risk, optimise resource allocation and
-                outcomes across the enterprise, and prepare for the wide-ranging
-                implications of the EU AI Act
+                Our software allows your enterprise to adopt AI with confidence,
+                minimize risk, optimise resource allocation and outcomes across
+                the enterprise, and prepare for the wide-ranging implications of
+                the EU AI Act
               </div>
             </UseCaseCard>
             <UseCaseCard title="Preparing for the NYC “Bias Audit” law">
