@@ -70,13 +70,13 @@ export default function UseCasesOverview() {
                   Automated Employment Decision Tool
                 </span>{" "}
                 ensures your compliance with incoming legislation. With our
-                third-part assessment, get ready to be compliant in a fast,
+                third-party assessment, get ready to be compliant in a fast,
                 cost-effective, and easy to scale manner.​
               </div>
             </UseCaseCard>
             <UseCaseCard title="Third-party conformity assessment">
               <div>
-                Our assurance process demonstrates efficiency, adhrence to
+                Our assurance process demonstrates efficiency, adherence to
                 standards or your legal compliance to regulators and customers.
                 Use Holistic AI to generate trust at scale for your enterprise.​
               </div>

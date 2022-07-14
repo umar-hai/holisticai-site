@@ -15,8 +15,8 @@ export default function AiRiskManagement() {
           AI Risk Management
         </Title>
         <div className="mt-10 text-[22px] font-bold max-w-[687px]">
-          Enterprise-grade management of your AI assets risks, ensuring adoption
-          is done in a safe, legal, and ethical manner
+          Enterprise-grade management of your AI assets' risks, ensuring
+          adoption is done in a safe, legal, and ethical manner
         </div>
         <div className="block lg:hidden">
           <StaticImage
