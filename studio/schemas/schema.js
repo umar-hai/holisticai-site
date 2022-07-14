@@ -17,6 +17,7 @@ import excerptPortableText from "./objects/excerptPortableText";
 import mainImage from "./objects/mainImage";
 import authorReference from "./objects/authorReference";
 import jobOpening from "./documents/jobOpening";
+import paper from "./documents/paper";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -37,7 +38,7 @@ export default createSchema({
     bioPortableText,
     excerptPortableText,
     jobOpening,
-
+    paper,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
   ]),
