@@ -60,6 +60,11 @@ export default function Footer() {
                   Blog
                 </Link>
               </li>
+              <li className="mt-8">
+                <Link className="hover:text-stroke" to="/papers">
+                  Papers
+                </Link>
+              </li>
             </ul>
           </div>
           {/* <div>

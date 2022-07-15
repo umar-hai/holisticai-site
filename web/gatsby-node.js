@@ -46,6 +46,46 @@ async function createBlogPostPages(graphql, actions) {
     });
 }
 
+async function createResearchPaperPages(graphql, actions) {
+  const { createPage } = actions;
+  const result = await graphql(`
+    {
+      allSanityPaper(
+        filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }
+      ) {
+        edges {
+          node {
+            id
+            publishedAt
+            slug {
+              current
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  if (result.errors) throw result.errors;
+
+  const postEdges = (result.data.allSanityPaper || {}).edges || [];
+
+  postEdges
+    .filter((edge) => !isFuture(new Date(edge.node.publishedAt)))
+    .forEach((edge) => {
+      const { id, slug = {}, publishedAt } = edge.node;
+      const dateSegment = format(new Date(publishedAt), "yyyy/MM");
+      const path = `/papers/${dateSegment}/${slug.current}/`;
+
+      createPage({
+        path,
+        component: require.resolve("./src/templates/research-paper.js"),
+        context: { id },
+      });
+    });
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   await createBlogPostPages(graphql, actions);
+  await createResearchPaperPages(graphql, actions);
 };

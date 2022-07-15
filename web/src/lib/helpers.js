@@ -23,6 +23,12 @@ export function getBlogUrl(publishedAt, slug) {
   }/`;
 }
 
+export function getPaperUrl(publishedAt, slug) {
+  return `/papers/${format(new Date(publishedAt), "yyyy/MM")}/${
+    slug.current || slug
+  }/`;
+}
+
 export function buildImageObj(source = { asset: {} }) {
   const imageObj = {
     asset: { _ref: source.asset._ref || source.asset._id },

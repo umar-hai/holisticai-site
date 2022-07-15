@@ -18,6 +18,10 @@ export default function Navbar({ shrink }) {
       text: "Blog",
     },
     {
+      link: "/papers",
+      text: "Papers",
+    },
+    {
       link: "/careers",
       text: "Careers",
     },

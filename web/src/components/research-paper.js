@@ -12,7 +12,7 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import ProseableText from "./prosable-text";
 
-function BlogPost(props) {
+function ResearchPaper(props) {
   const { _rawBody, authors, categories, title, mainImage, publishedAt } =
     props;
 
@@ -70,14 +70,14 @@ function BlogPost(props) {
             </div>
           </div>
           <div className="pt-9 border-t">
-            <Link className="font-bold text-base-blue text-[22px]" to="/blog">
+            <Link className="font-bold text-base-blue text-[22px]" to="/papers">
               <div className="flex items-center gap-3">
                 <StaticImage
                   src="../images/left.png"
                   alt=""
                   quality={100}
                 ></StaticImage>
-                <span>Back to Blog Home</span>
+                <span>Back to Papers Home</span>
               </div>
             </Link>
           </div>
@@ -87,4 +87,4 @@ function BlogPost(props) {
   );
 }
 
-export default BlogPost;
+export default ResearchPaper;

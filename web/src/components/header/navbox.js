@@ -16,6 +16,9 @@ export default function Navbox({ open, shrink }) {
           <Link to="/blog">Blog</Link>
         </li>
         <li>
+          <Link to="/papers">Papers</Link>
+        </li>
+        <li>
           <Link to="/careers">Careers</Link>
         </li>
         {/* <li>
