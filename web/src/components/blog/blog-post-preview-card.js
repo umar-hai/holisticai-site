@@ -42,7 +42,7 @@ export default function BlogPostPreviewCard(props) {
         </div>
         <div className="border-t border-t-stroke flex justify-between font-roboto text-sm font-semibold text-text-secondary items-center pt-1 mt-6">
           <div>{props.authors.slice(0, 1).map((a) => a.author.name)}</div>
-          <div>{format(new Date(props.publishedAt), "MMMM Mo, yyyy")}</div>
+          <div>{format(new Date(props.publishedAt), "MMMM do, yyyy")}</div>
         </div>
       </div>
     </Link>

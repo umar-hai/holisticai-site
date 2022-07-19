@@ -40,7 +40,7 @@ function ResearchPaper(props) {
               subtitle={
                 differenceInDays(new Date(publishedAt), new Date()) > 3
                   ? formatDistance(new Date(publishedAt), new Date())
-                  : format(new Date(publishedAt), "MMMM Mo, yyyy")
+                  : format(new Date(publishedAt), "MMMM do, yyyy")
               }
             ></BlogInfo>
           </div>

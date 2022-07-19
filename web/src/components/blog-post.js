@@ -16,6 +16,8 @@ function BlogPost(props) {
   const { _rawBody, authors, categories, title, mainImage, publishedAt } =
     props;
 
+  console.log({ publishedAt });
+
   return (
     <article>
       <HaiContainer>
@@ -37,11 +39,7 @@ function BlogPost(props) {
 
             <BlogInfo
               title="Date"
-              subtitle={
-                differenceInDays(new Date(publishedAt), new Date()) > 3
-                  ? formatDistance(new Date(publishedAt), new Date())
-                  : format(new Date(publishedAt), "MMMM Mo, yyyy")
-              }
+              subtitle={format(new Date(publishedAt), "MMMM do, yyyy")}
             ></BlogInfo>
           </div>
 
